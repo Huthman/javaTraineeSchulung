@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÑ½®şÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(µÓº¶úÿÿÿÿ
+h
+java:S5669"MCast this argument to 'Object' to pass a single element to the vararg method.(¨¥¹…ıÿÿÿÿ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Ó‡ô
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ó‡ô
