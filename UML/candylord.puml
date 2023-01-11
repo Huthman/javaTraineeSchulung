@@ -1,0 +1,128 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam groupInheritance 2
+
+class Player{
+    -inventorySpace: int
+    -cash: int
+    -debt: int
+    -accountBalance: long
+    +Player(startingNeighborhood Neighborhood)
+    +lendFromLoanShark(amount: int): boolean
+    +payOffLoanShark(amount: int): void
+    +depositMoney(amount: int): void
+    +withdrawMoney(amount: int): void
+    +buyCandy(candy: Candy, amount: int): boolean
+    +sellCandy(candy: Candy, amount: int): boolean
+    +travelTo(neighborhood: Neighborhood): void
+    -generateCandies(): Candy[]
+    -recalculateCandyPrices(): void
+    -countCandies(): int
+}
+
+enum MenuType{
+    START_GAME
+    OVERVIEW
+    LOAN_SHARK_OVERVIEW
+    LEND_MONEY
+    PAY_BACK_MONEY
+    BANK_OVERVIEW
+    WITHDRAW
+    DEPOSIT
+    BUY_CANDY
+    SELL_CANDY
+    TRAVEL
+    EVENT
+}
+
+class Game{
+    -currentDay: int
+    -currentMenu: MenuType
+    +Game()
+    +getCurrentDay(): int
+    +executeAction(numberKeyInput: int): void
+    -logCurrentMenu(): void
+}
+
+class Candy{
+    -name: String {final}
+    -minPrice: int {final}
+    -maxPrice: int {final}
+    -count: int
+    -currentPrice: int
+    +Candy(name: String, minPrice: int, maxPrice: int)
+    +calculateCurrentPrice(neighborhood: Neighborhood): void
+    +increaseAmountBy(amount: int): void
+    +reduceAmountBy(amount: int): void
+    +getName(): int
+    +getAmount(): int
+    +getCurrentPrice(): int
+}
+
+abstract class Event{
+    -description: String {final}
+    -duration: int {final}
+    +Event(description: String)
+    +process(player: Player): void {abstract}
+    +getDescription(): String
+    +getDuration(): int
+}
+
+class Mugging{
+    +Mugging();
+}
+class CandyFind{
+    +CandyFind();
+}
+class NoEvent{
+    +NoEvent();
+}
+
+
+class City{
+    -travelCostPerDistance: Double
+    +City(travelCostPerDistance: Double)
+    +getNeighborhoods(): Neighborhood[]
+    +calculateTravelCost(neighborhood: Neighborhood)): int
+}
+
+class Neighborhood{
+    -name: String {final}
+    -candyPriceAdjustment: HashMap<Candy,Double> {final}
+    -coordinates: Point {final}
+    +Neighborhood(coordinates: Point, name: String)
+    +changePriceAdjustment(Candy,Double): Neighborhood
+    +distanceTo(neighborhood: Neighborhood): Double
+    +getName(): String
+    +getCandyPriceAdjustment(): HashMap<Candy,Double>
+    -generateDefaultPriceAdjustments(candies: Candy[]): HashMap<Candy,Double>
+}
+
+
+class RandomGameEvent{
+    +next(): Event {static}
+    -RandomGameEvent()
+}
+note left of RandomGameEvent::next
+    Returns an instance of Mugging,
+    CandyFind or NoEvent
+end note
+
+City o-- "8" Neighborhood
+
+Player o-- "8" Candy
+
+Game *- "1" Player
+Game *-- "1" City
+Game ..> RandomGameEvent
+RandomGameEvent ..> Event
+Candy .> Neighborhood
+Player o-- "1" Neighborhood
+Event <|-- Mugging
+Event <|-- CandyFind
+Event <|-- NoEvent
+Game +- MenuType
+
+
+
+@enduml
