@@ -3,17 +3,18 @@
 skinparam groupInheritance 2
 
 class Player{
+    -maxLoan: long {final}
     -inventorySpace: int
-    -cash: int
-    -debt: int
+    -cash: long
+    -debt: long
     -accountBalance: long
     +Player(startingNeighborhood Neighborhood)
-    +lendFromLoanShark(amount: int): boolean
+    +lendFromLoanShark(amount: int): void
     +payOffLoanShark(amount: int): void
     +depositMoney(amount: int): void
     +withdrawMoney(amount: int): void
-    +buyCandy(candy: Candy, amount: int): boolean
-    +sellCandy(candy: Candy, amount: int): boolean
+    +buyCandy(candy: Candy, amount: int): void
+    +sellCandy(candy: Candy, amount: int): void
     +travelTo(neighborhood: Neighborhood): void
     -generateCandies(): Candy[]
     -recalculateCandyPrices(): void
@@ -39,9 +40,9 @@ class Game{
     -currentDay: int
     -currentMenu: MenuType
     +Game()
-    +getCurrentDay(): int
-    +executeAction(numberKeyInput: int): void
-    -logCurrentMenu(): void
+    +startGame(): void
+    -executeAction(numberKeyInput: int): void
+    -printCurrentMenu(): void
 }
 
 class Candy{
@@ -52,17 +53,17 @@ class Candy{
     -currentPrice: int
     +Candy(name: String, minPrice: int, maxPrice: int)
     +calculateCurrentPrice(neighborhood: Neighborhood): void
-    +increaseAmountBy(amount: int): void
-    +reduceAmountBy(amount: int): void
+    +increaseCountBy(amount: int): void
+    +reduceCountBy(amount: int): void
     +getName(): int
-    +getAmount(): int
+    +getCount(): int
     +getCurrentPrice(): int
 }
 
 abstract class Event{
     -description: String {final}
     -duration: int {final}
-    +Event(description: String)
+    +Event(description: String, duration: int)
     +process(player: Player): void {abstract}
     +getDescription(): String
     +getDuration(): int
@@ -82,16 +83,17 @@ class NoEvent{
 class City{
     -travelCostPerDistance: Double
     +City(travelCostPerDistance: Double)
+    +calculateTravelCost(from: Neighborhood, to: Neighborhood): int
     +getNeighborhoods(): Neighborhood[]
-    +calculateTravelCost(neighborhood: Neighborhood)): int
+    -generateDefaultNeighborhoods(): Neighborhood[]
 }
 
 class Neighborhood{
     -name: String {final}
     -candyPriceAdjustment: HashMap<Candy,Double> {final}
     -coordinates: Point {final}
-    +Neighborhood(coordinates: Point, name: String)
-    +changePriceAdjustment(Candy,Double): Neighborhood
+    +Neighborhood(coordinates: Point, name: String, candies: Candy[])
+    +changePriceAdjustment(candy: Candy,multiplier: Double): Neighborhood
     +distanceTo(neighborhood: Neighborhood): Double
     +getName(): String
     +getCandyPriceAdjustment(): HashMap<Candy,Double>

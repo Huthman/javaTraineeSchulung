@@ -7,13 +7,3 @@ m
 =src/main/java/com/materna/exercises/arrays/NearestCinema.java,0\e\0e6c5ceecc7cb7d50ce199bceb354d6234a8fd9b
 E
 UML/radiostation.puml,9\9\995dee7ed835a55911749b5f476afe7b35640cfa
-^
-.src/main/java/com/materna/candyLord/Event.java,0\b\0b0256d270bf5ad99c330fbaad23685f0cd2d2c4
-`
-0src/main/java/com/materna/candyLord/Mugging.java,5\a\5aec28104dc4b467de3315c3bdd893462252e421
-b
-2src/main/java/com/materna/candyLord/CandyFind.java,2\8\2867852c4fcd7ba8040650d8f6abec6aad2104a7
-`
-0src/main/java/com/materna/candyLord/NoEvent.java,f\b\fb011c56207ec92037620f6b63caba1b5d9425d1
-h
-8src/main/java/com/materna/candyLord/RandomGameEvent.java,9\f\9fe79d613dba6a7ec6699327128b3c132af6f6f2

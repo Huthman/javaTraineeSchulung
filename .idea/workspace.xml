@@ -5,70 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb036b88-7fb5-481b-bac1-29b517f078d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UML/candylord.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UML/radiostation.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19a8a0f3b7173c4f3529a25a4c2f5cff7f77edf6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2177c78d935dec99a87f9220d186120016c0770d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29b0d078061f382a3956260128e3a84e01696055" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37b75b17a4906254646cc24487385397d8461e32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38b82287f159bb752d01da8b53d7e2c34f9ecd78" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3a7d17a9c62818e970a76299a87fe4a626b68bc8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b4dfd5dfe89d525e8fa684aa9eeea6631b06bb2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/646edabb2f36af0432611e703e2d7499ae40cc85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b2bfeaef2b9aa622efe5a6f95b63167e0a69334" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d6ae3cfca5d17b37005f8fad67b14df779bfba6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74bb6f3b264beef528c43275539e6278df2b3899" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f15f3047e4b7569d335d7407fecb9e809fea61b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/800b8775ff965cd1c24de18a5206c8c41b984d85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a88c4888ec27f92b9b0ef761297041c563d12ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9cdffa2678220da624bfa048ea9d83a12e3bf28b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a7a038496fe77da2cff972602f7baa8291beec85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa565a52bb6f622390f25dd62a938a1d2350c0ad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ac36c2ec9028ca80f82ca7d1e344684438b88243" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b46284e3ac98f2baf6b44ef58d271bd8054ab329" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c844c82bfc776e5181ad481f880c27d04b86cb87" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb9e8158e907f4913b0c93a6e4c4adcdb11eee22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7838b19c9f6865d9908ffbaa6dbaf2d8c59f150" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6ee67a4757ba995b8745f846652041d308c953f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f78c430d673f7dcc7a9a3946cfc13b85e58fa7a8" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Candy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/CandyFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Mugging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Neighborhood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/NoEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/RandomGameEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UML/candylord.puml" beforeDir="false" afterPath="$PROJECT_DIR$/UML/candylord.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arrays/NearestCinema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arrays/Reverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arrays/SortNumbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/arrays/checkForApproval.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterAndStringProcessing/FormattingOutputsCopy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterAndStringProcessing/SumOfTheDigits.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterAndStringProcessing/TestRepetitions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterAndStringProcessing/TopToBottom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterAndStringProcessing/YZswapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/classesObjectsPackages/BermudaTriangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/BottlesOfRum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/BruteForce.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/ConvertLiters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/LinePrinter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/LinePrinterDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/Payday.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/SameDigit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/SumFromConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/SvgCircle1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/TwentyOne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/imperativeProgramming/randomColorSwitchCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/ElectronicDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/ElectronicDeviceWattComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Firebox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/FreeDiskSpaceTimerTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/IceMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Modulation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/MonitorTube.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Radio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Ship.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/TV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Toaster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ownClassesAndInterfaces/Tracer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +70,7 @@
       <recent name="C:\Users\cegidy\IdeaProjects\javaTraineeSchulung\UML" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.main">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ownClassesAndInterfaces.Application" />
       <module name="javaTraineeSchulung" />
@@ -136,19 +86,6 @@
     </configuration>
     <configuration name="FormattingOutputsCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.characterAndStringProcessing.FormattingOutputsCopy" />
-      <module name="javaTraineeSchulung" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.characterAndStringProcessing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SumOfTheDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.characterAndStringProcessing.SumOfTheDigits" />
       <module name="javaTraineeSchulung" />
       <extension name="coverage">
         <pattern>
@@ -186,13 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.materna.candyLord.main" />
+      <module name="javaTraineeSchulung" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.materna.candyLord.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.FormattingOutputsCopy" />
         <item itemvalue="Application.TopToBottom" />
         <item itemvalue="Application.TestRepetitions" />
-        <item itemvalue="Application.SumOfTheDigits" />
       </list>
     </recent_temporary>
   </component>
