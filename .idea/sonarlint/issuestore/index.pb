@@ -3,9 +3,6 @@ g
 7src/main/java/com/materna/exercises/arrays/Reverse.java,3\e\3e0125437e8c85db4c7ca91a93b17532eaf86db9
 m
 =src/main/java/com/materna/exercises/arrays/NearestCinema.java,0\e\0e6c5ceecc7cb7d50ce199bceb354d6234a8fd9b
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 b
 2src/main/java/com/materna/candyLord/CandyFind.java,2\8\2867852c4fcd7ba8040650d8f6abec6aad2104a7
 `
