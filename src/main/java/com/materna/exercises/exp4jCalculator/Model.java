@@ -10,6 +10,12 @@ public class Model {
   private HashMap<String, Double> variables = new HashMap<>();
   private Result lastResult = null;
 
+  /**
+   * Saves (name, value) pair for later evaluations of expressions
+   *
+   * @param name  the name of the variable
+   * @param value the corresponding value
+   */
   public void bindVariable(String name, double value) {
     if (name == null || name.length() == 0) {
       throw new IllegalArgumentException("Variable name may not be empty or null");
@@ -17,6 +23,11 @@ public class Model {
     variables.put(name, value);
   }
 
+  /**
+   * Computes a given term and sets the latestResult accordingly
+   *
+   * @param term the term to be computed
+   */
   public void computeTerm(String term) {
     if (term == null || term.length() == 0) {
       // Set result to error result
@@ -38,6 +49,7 @@ public class Model {
     }
   }
 
+  // getters & setters
   public HashMap<String, Double> getVariables() {
     return variables;
   }

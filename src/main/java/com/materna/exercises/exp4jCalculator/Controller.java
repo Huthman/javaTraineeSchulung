@@ -6,35 +6,34 @@ import java.util.Scanner;
 public class Controller {
   private final Model model;
   private final View view;
-  Scanner scanner = new Scanner(System.in);
 
   public Controller(Model model, View view) {
     this.model = model;
     this.view = view;
   }
 
-  public void run() {
-    boolean running = true;
-    view.refresh();
-    while (running) {
-      String input = scanner.nextLine();
-      if (!input.matches("(?i)exit")) {
-        evaluateTerm(input.replace(',', '.'));
-      } else {
-        running = false;
-      }
-    }
-  }
 
-  private void evaluateTerm(String term) {
-    if(term.contains("=")){
+  /**
+   * The only public method of the controller. Gets accessed by the view to push the user input to
+   * the business logic
+   *
+   * @param term the user input to be handled
+   */
+  public void evaluateTerm(String term) {
+    if (term.contains("=")) {
       bindVariable(term);
-    }else{
+    } else {
       model.computeTerm(term);
       view.refresh();
     }
   }
 
+  /**
+   * Gets called by evaluateTerm. Checks if the input is a variable assignment and calls the
+   * model to save the (variable, value) pair for later use.
+   *
+   * @param input the potential variable assignment
+   */
   private void bindVariable(String input) {
     if (input == null || input.length() == 0) {
       throw new IllegalArgumentException("No input given");
@@ -49,7 +48,7 @@ public class Controller {
       return;
     }
     // Additionally the identifier has structural requirements
-    if(!term[0].matches("\\u0020*[_a-zA-Z][_a-zA-Z0-9]*\\u0020*")){
+    if (!term[0].matches("\\u0020*[_a-zA-Z][_a-zA-Z0-9]*\\u0020*")) {
       model.setLastResult(new Result("Invalid identifier"));
       view.refresh();
       return;
@@ -61,6 +60,15 @@ public class Controller {
       model.bindVariable(term[0].trim(), model.getLastResult().getResult());
     }
     view.refresh();
+  }
+
+  /**
+   * Accesses the model to get the latest result. Used by the view to update its display.
+   *
+   * @return the latest Result object of the model.
+   */
+  public Result getResultFromModel() {
+    return model.getLastResult();
   }
 
 }

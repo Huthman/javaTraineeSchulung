@@ -5,41 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb036b88-7fb5-481b-bac1-29b517f078d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/dataStructures/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/dataStructures/ColorNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/dataStructures/ListExercises.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/dataStructures/MapExcercises.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/dataStructures/UniqueIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/date/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/ConsoleLogView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/lambdaFunctionalProgramming/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/maven/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/ownClassesAndInterfaces/Distance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/streams/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/streams/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/streams/PrimitiveStreams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/streams/countLinesOfText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/threadsExecutors/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/threadsExecutors/Pirate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/threadsExecutors/TestOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/threadsExecutors/TestTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lines" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/persons.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UML/candylord.puml" beforeDir="false" afterPath="$PROJECT_DIR$/UML/candylord.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Candy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Mugging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Mugging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/candyLord/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/ownClassesAndInterfaces/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/ownClassesAndInterfaces/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/ConsoleLogView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/ConsoleLogView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materna/exercises/exp4jCalculator/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
