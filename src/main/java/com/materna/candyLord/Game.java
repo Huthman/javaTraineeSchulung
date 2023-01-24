@@ -1,5 +1,10 @@
 package com.materna.candyLord;
 
+import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
+import com.googlecode.lanterna.terminal.Terminal;
+import com.googlecode.lanterna.terminal.TerminalFactory;
+
+import java.io.IOException;
 import java.net.StandardSocketOptions;
 import java.util.Scanner;
 
@@ -26,7 +31,7 @@ public class Game {
     currentMenu = MenuType.START_GAME;
   }
 
-  public void startGame(){
+  public void startGame() throws IOException {
     Scanner scanner = new Scanner(System.in);
     System.out.println("To start the game, press any key.");
     scanner.next();

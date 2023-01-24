@@ -16,6 +16,7 @@ class Player{
     +buyCandy(candy: Candy, amount: int): void
     +sellCandy(candy: Candy, amount: int): void
     +travelTo(neighborhood: Neighborhood): void
+    +getCandies();
     -generateCandies(): Candy[]
     -recalculateCandyPrices(): void
     -countCandies(): int
@@ -39,10 +40,18 @@ enum MenuType{
 class Game{
     -currentDay: int
     -currentMenu: MenuType
+    -terminal: Terminal
+    -screen: Screen
+    -tg: TextGraphics
+
     +Game()
-    +startGame(): void
-    -executeAction(numberKeyInput: int): void
-    -printCurrentMenu(): void
+    -startGame()
+    -overviewScreen(): void
+    -buyCandyScreen(): void
+    -sellCandyScreen(): void
+    -travelScreen(): void
+    -bankScreen(): void
+    -loanSharkScreen(): void
 }
 
 class Candy{
@@ -51,6 +60,7 @@ class Candy{
     -maxPrice: int {final}
     -count: int
     -currentPrice: int
+
     +Candy(name: String, minPrice: int, maxPrice: int)
     +calculateCurrentPrice(neighborhood: Neighborhood): void
     +increaseCountBy(amount: int): void
@@ -63,6 +73,7 @@ class Candy{
 abstract class Event{
     -description: String {final}
     -duration: int {final}
+
     +Event(description: String, duration: int)
     +process(player: Player): void {abstract}
     +getDescription(): String
@@ -82,6 +93,7 @@ class NoEvent{
 
 class City{
     -travelCostPerDistance: Double
+
     +City(travelCostPerDistance: Double)
     +calculateTravelCost(from: Neighborhood, to: Neighborhood): int
     +getNeighborhoods(): Neighborhood[]
@@ -92,6 +104,7 @@ class Neighborhood{
     -name: String {final}
     -candyPriceAdjustment: HashMap<Candy,Double> {final}
     -coordinates: Point {final}
+
     +Neighborhood(coordinates: Point, name: String, candies: Candy[])
     +changePriceAdjustment(candy: Candy,multiplier: Double): Neighborhood
     +distanceTo(neighborhood: Neighborhood): Double
@@ -102,8 +115,8 @@ class Neighborhood{
 
 
 class RandomGameEvent{
-    +next(): Event {static}
     -RandomGameEvent()
+    +next(): Event {static}
 }
 note left of RandomGameEvent::next
     Returns an instance of Mugging,

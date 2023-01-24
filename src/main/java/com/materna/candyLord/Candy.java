@@ -1,13 +1,5 @@
 package com.materna.candyLord;
 
-// Skittles
-// Toblerone
-// Cookies
-// Maoam
-// Oreos
-// Gummy Bears
-// Giotto
-// Duplo
 
 public class Candy {
   private final String name;
@@ -34,6 +26,13 @@ public class Candy {
   public void calculateCurrentPrice(Neighborhood neighborhood){
     int baseRandom = minPrice + (int)Math.round(Math.random()*(maxPrice-minPrice));
     currentPrice = (int)Math.round(baseRandom*neighborhood.getCandyPriceAdjustment().get(this));
+
+    if(currentPrice > maxPrice){
+      currentPrice = maxPrice;
+    }
+    if(currentPrice < minPrice){
+      currentPrice = minPrice;
+    }
   }
 
   public void increaseCountBy(int amount){

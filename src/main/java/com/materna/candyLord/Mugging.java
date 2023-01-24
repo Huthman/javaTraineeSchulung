@@ -7,6 +7,8 @@ public class Mugging extends Event{
 
   @Override
   public void process(Player player) {
-    //TODO: implement
+    for(Candy c : player.getCandies()){
+      c.reduceCountBy(c.getCount());
+    }
   }
 }

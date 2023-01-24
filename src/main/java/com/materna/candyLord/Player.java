@@ -134,6 +134,10 @@ public class Player {
     recalculateCandyPrices();
   }
 
+  public Candy[] getCandies() {
+    return candies;
+  }
+
   private Candy[] generateCandies(){
     Candy[] generatedCandies = new Candy[8];
 
