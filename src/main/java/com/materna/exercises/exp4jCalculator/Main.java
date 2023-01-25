@@ -7,5 +7,6 @@ public class Main {
     Model m = new Model();
     Controller c = new Controller(m, v);
     v.setController(c);
+    v.run();
   }
 }
