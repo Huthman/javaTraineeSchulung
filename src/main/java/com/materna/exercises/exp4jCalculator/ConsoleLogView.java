@@ -9,11 +9,11 @@ import java.util.Scanner;
 public class ConsoleLogView implements View {
   // ANSI Presets to colorize the console output. Used to differentiate between errors (red) and
   // results (green)
-  public static final String ANSI_RESET = "\u001B[0m";
-  public static final String ANSI_RED = "\u001B[31m";
-  public static final String ANSI_GREEN = "\u001B[32m";
-  final Scanner scanner = new Scanner(System.in);
-  Controller controller;
+  private static final String ANSI_RESET = "\u001B[0m";
+  private static final String ANSI_RED = "\u001B[31m";
+  private static final String ANSI_GREEN = "\u001B[32m";
+  private final Scanner scanner = new Scanner(System.in);
+  private Controller controller;
 
   @Override
   public void setController(Controller controller) {
