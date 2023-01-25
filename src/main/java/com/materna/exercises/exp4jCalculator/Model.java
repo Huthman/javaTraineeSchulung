@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class Model {
   private HashMap<String, Double> variables = new HashMap<>();
-  private Result lastResult = null;
+  private Result lastResult;
 
   /**
    * Saves (name, value) pair for later evaluations of expressions
@@ -17,7 +17,7 @@ public class Model {
    * @param value the corresponding value
    */
   public void bindVariable(String name, double value) {
-    if (name == null || name.length() == 0) {
+    if (name == null || name.isEmpty()) {
       throw new IllegalArgumentException("Variable name may not be empty or null");
     }
     variables.put(name, value);
@@ -29,7 +29,7 @@ public class Model {
    * @param term the term to be computed
    */
   public void computeTerm(String term) {
-    if (term == null || term.length() == 0) {
+    if (term == null || term.isEmpty()) {
       // Set result to error result
       lastResult = new Result("No term given.");
     } else {
