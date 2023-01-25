@@ -48,7 +48,7 @@ public class Controller {
       return;
     }
     // Additionally the identifier has structural requirements
-    if (!term[0].matches("\\u0020*[_a-zA-Z][_a-zA-Z0-9]*\\u0020*")) {
+    if (!term[0].trim().matches("[_a-zA-Z]\\w*")) {
       model.setLastResult(new Result("Invalid identifier"));
       view.refresh();
       return;
