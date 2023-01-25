@@ -1,6 +1,6 @@
 package com.materna.exercises.arrays;
 
-public class checkForApproval {
+public class CheckForApproval {
     public static void main(String[] args) {
         System.out.println(allTrue(true, null));
     }
