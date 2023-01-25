@@ -38,11 +38,8 @@ public class Model {
                 .variables(variables.keySet())
                 .build()
                 .setVariables(variables);
-        if (e.validate().isValid()) {
-          lastResult = new Result(e.evaluate());
-        } else {
-          lastResult = new Result(e.validate().getErrors());
-        }
+        lastResult = e.validate().isValid() ? new Result(e.evaluate()) :
+                new Result(e.validate().getErrors());
       } catch (Exception e) {
         lastResult = new Result(e.getMessage());
       }
